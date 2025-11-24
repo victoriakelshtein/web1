@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+.manrope{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+h4 {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+body{
+    padding: 4rem;
+    background-color: #121212;
+    margin: 0 auto;
+    max-width: 1280px;
+    color: white;
+    font-family: "Manrope", sans-serif;
+}
+
+.hero{
+    padding-top: 12rem;
+}
+
+.hero_content h3{
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.hero_content h4{
+    font-size: 142px;
+    font-weight: 500;
+    font-family: manrope;
+}
+
+.hero_content a{
+    padding-top: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 10px 24px;
+    border: 1px solid white;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+.hero_content a:hover{
+    opacity: 0.7;
+}
+.hero_content a:active{
+    opacity: 0.3;
+}
+.main-container{
+    padding-top: 20rem;
+}
+.img_person{
+    border: 1px white solid;
+    background-image: url("/vika.png");
+    height: 564px;
+    width: 435px;
+}
+
+.whois{
+    background-color: #121212;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.whois h3{
+    font-weight: 400;
+}
+
+.main_content{
+    display: flex;
+    gap: 100px;
+    padding-bottom: 15rem;
+}
+.line{
+
+    width: 100%;
+    background-color: white;
+    height: 1px;
+}
+.wieufhoqie{
+    max-width: 737px;
+}
+.skils h1,
+.about_text h1{
+    font-size: 62px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.skils{
+    padding-top: 3rem;
+}
+.uqwef{
+    padding-bottom: 2rem;
+}
+.skils h4,
+.about_text h4{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.slider h1 {
+    font-size: 62px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.slider_container {
+    padding-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    /* overflow: hidden; */
+    position: relative; /* Добавляем позиционирование */
+    transition: left 0.3s ease; /* Плавная анимация */
+}
+
+.block {
+    flex: 0 0 auto; /* Убедимся, что блоки не сжимаются */
+    width: 100%; /* Или задайте фиксированную ширину, например, 300px */
+}
+
+.buttons_slider {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons_slider button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.buttons_slider button:hover {
+    opacity: 0.7;
+}
+
+.buttons_slider button:active {
+    opacity: 0.5;
+}
+
+.slider {
+    position: relative;
+    user-select: none;
+    touch-action: pan-y;
+}
+footer{
+    padding-top: 10rem;
+}
+.footer_content{
+    border-style: dotted;
+    border: 1px white dashed;
+    max-width: 628px;
+}
+
+.footer_container{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textfot h1{
+    font-size: 19px;
+    font-weight: 300;
+}
+.textfot{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer_container a{
+    text-decoration: none;
+    color: white;
+}
