@@ -84,7 +84,7 @@ body{
 }
 .img_person{
     border: 1px white solid;
-    background-image: url("/docs/vika.png");
+    background-image: url("docs/vika.png");
     height: 564px;
     width: 435px;
 }
