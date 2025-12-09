@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="sst/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+
 </head>
 <body>
     <header>
@@ -61,19 +62,30 @@
                 <h1 id="project">Мои работы</h1>
                 <div class="slider_container">
                     <div class="block">
-                        <img src="/fr.png" alt="rf">
+                        <img src="./fr.png" alt="rf">
                     </div>
                     <div class="block">
-                        <img src="/sec.png" alt="rf">
+                        <img src="./sec.png" alt="rf">
                     </div>
                     <div class="block">
-                        <img src="/tri.png" alt="rf">
+                        <img src="./tri.png" alt="rf">
                     </div>
                 </div>
                 <div class="buttons_slider">
                     <button class="prev" type="button" id="left"><img src="left.svg" alt="leftbutton"></button>
                     <button class="next" type="button" id="right"><img src="right.svg" alt="rightbut"></button>
                 </div>
+            </div>
+        </div>
+        <div class="container_for_form">
+            <div class="container">
+                <form id="subscriptionForm">
+                    <div class="form-group">
+                        <label for="email">Email <span style="color:#ff4757">*</span></label>
+                        <input type="email" id="email" class="form-control" placeholder="example@domain.com" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Подписаться на рассылку</button>
+                </form>
             </div>
         </div>
     </main>
@@ -92,4 +104,24 @@
     </footer>
 </body>
 <script src="sst/script.js"></script>
+<script>
+            document.getElementById('subscriptionForm').addEventListener('submit', function(e) {
+                e.preventDefault()
+                const email = document.getElementById('email').value;
+                const message = `Получение email для рассылки ${email}`;
+                const token = '8574183933:AAF29CRqMG4gJY39c08ZHoI1CeZHfAaB7w4';
+                const chatId = '935469271';
+                const url = `https://api.telegram.org/bot${token}/sendMessage`;
+                fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: chatId,
+                        text: message
+                    })
+                })
+            });
+</script>
 </html>
